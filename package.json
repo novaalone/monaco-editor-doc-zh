@@ -1,0 +1,24 @@
+{
+  "name": "monaco-editor-doc-zh",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/novaalone/monaco-editor-doc-zh.git"
+  },
+  "author": "nova",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/novaalone/monaco-editor-doc-zh/issues"
+  },
+  "homepage": "https://github.com/novaalone/monaco-editor-doc-zh#readme",
+  "dependencies": {
+    "vuepress": "^1.8.1"
+  }
+}
