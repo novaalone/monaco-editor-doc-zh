@@ -2,8 +2,9 @@ module.exports = {
   title: 'Monaco-Editor',
   description: 'Monaco-Editor API中文文档',
   head: [
-    ['link', { rel: 'icon', href: './public/logo.png' }]
+    ['link', { rel: 'icon', href: '/monaco-editor-doc-zh/public/logo.png' }]
   ],
+  base: '/monaco-editor-doc-zh/',
   themeConfig: {
     nav: [
     {
