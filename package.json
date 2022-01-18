@@ -1,20 +1,30 @@
 {
   "name": "monaco-guide-zh",
   "version": "1.0.0",
-  "description": "",
+  "description": "monaco editor使用指南",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "vuepress dev docs",
-    "build": "vuepress build docs"
+    "build": "vuepress build docs",
+    "publish": "npm run build && gh-pages -d docs/.vuepress/dist"
   },
-  "author": "",
+  "author": "Nova",
   "license": "ISC",
   "dependencies": {
     "@vuepress/plugin-register-components": "2.0.0-beta.33",
     "@vuepress/plugin-search": "2.0.0-beta.33",
+    "gh-pages": "^3.2.3",
     "monaco-editor": "0.31.1",
     "monaco-editor-webpack-plugin": "7.0.1",
     "vuepress-webpack": "2.0.0-beta.33"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/novaalone/monaco-editor-doc-zh.git"
+  },
+  "bugs": {
+    "url": "https://github.com/novaalone/monaco-editor-doc-zh/issues"
+  },
+  "homepage": "https://github.com/novaalone/monaco-editor-doc-zh#readme"
 }

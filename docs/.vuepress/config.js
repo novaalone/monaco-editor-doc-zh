@@ -6,6 +6,7 @@ module.exports = {
   lang: "zh-CN",
   title: "Monaco Editor 实用指南",
   description: "呕心沥血 倾情奉献",
+  base: '/monaco-editor-doc-zh/',
   bundlerConfig: {
     chainWebpack: (config) => {
       config.plugin("MonacoWebpackPlugin").use(MonacoWebpackPlugin);
@@ -39,6 +40,8 @@ module.exports = {
     ],
   ],
   themeConfig: {
+    lastUpdatedText: '上次更新',
+    contributorsText: '贡献者',
     navbar: [
       {
         text: "指南",
@@ -46,7 +49,7 @@ module.exports = {
       },
       {
         text: "速查手册",
-        link: "/handbook/editor",
+        link: "/handbook",
       },
       {
         text: "官网地址",
@@ -57,33 +60,27 @@ module.exports = {
         link: "https://microsoft.github.io/monaco-editor/api/index.html",
       },
     ],
-    sidebar: [
-      {
-        text: "指南",
-        link: "/guide/",
-        children: [
-          {
-            text: "介绍",
-            link: "/guide/introduce.md",
-          },
-          {
-            text: "快速上手",
-            link: "/guide/start.md",
-          },
-          {
-            text: "Webpack配置",
-            link: "/guide/config.md",
-          },
-          {
-            text: "基础用法",
-            link: "/guide/basic.md",
-          },
-          {
-            text: "Diff编辑器",
-            link: "/guide/diff.md",
-          },
-        ],
-      },
-    ],
+    sidebar: {
+      '/guide/': [
+        {
+          text: '指南',
+          children: [
+            '/guide/introduce.md',
+            '/guide/start.md',
+            '/guide/config.md',
+            '/guide/basic.md',
+            '/guide/diff.md'
+          ]
+        }
+      ],
+      '/handbook/': [
+        {
+          text: '速查手册',
+          children: [
+            '/handbook/editor.md'
+          ]
+        }
+      ]
+    }
   },
 };
