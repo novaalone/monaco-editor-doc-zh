@@ -49,7 +49,7 @@ module.exports = {
       },
       {
         text: "速查手册",
-        link: "/handbook",
+        link: "/handbook/create",
       },
       {
         text: "官网地址",
@@ -77,7 +77,7 @@ module.exports = {
         {
           text: '速查手册',
           children: [
-            '/handbook/editor.md'
+            '/handbook/create.md'
           ]
         }
       ]
