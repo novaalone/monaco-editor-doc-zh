@@ -12,7 +12,7 @@ export default {
 
 <style>
 .demo-container {
-    background: #eee;
+    background: #323843;
     border-radius: 6px;
     margin: 1.6em 0;
     padding: 1.6em 0;

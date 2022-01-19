@@ -32,3 +32,9 @@ ariaLabel | 编辑器内容区域的aria标签（当获取焦点的时候） | �
 参数名 | 参数说明 | 是否必填 | 参数类型
 ---|---|---|---
 autoClosingBrackets | 自动闭合括号 | 否 | 'always','languageDefined'（默认）,'beforeWhitespace', 'never'
+autoClosingDelete | - | 否 | 'always','auto','never'
+autoClosingOvertype | - | 否 | 'always','auto','never'
+autoClosingQuotes | 自动闭合引号 | 否 | 'always','languageDefined'（默认）,'beforeWhitespace', 'never'
+autoDetectHighContrast | 自动检测高对比度，如果系统用的是高对比度的主题，编辑器也会自动切换成高对比度的主题 | 否 | boolean
+autoIndent | 键入、粘贴、移动或者缩进的时候，编辑器是否需要自动调整缩进 | 否 | 'none'
+,'advanced'(默认), 'full','brackets','keep'
